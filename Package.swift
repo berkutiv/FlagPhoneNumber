@@ -11,15 +11,10 @@ let package = Package(
             name: "FlagPhoneNumber",
             targets: ["FlagPhoneNumber"]),
     ],
-    dependencies: [
-        // no dependencies
-    ],
     targets: [
         .target(
             name: "FlagPhoneNumber",
-            dependencies: []),
-        .testTarget(
-            name: "FlagPhoneNumberTests",
-            dependencies: ["FlagPhoneNumber"]),
+            path: "FlagPhoneNumber"
+        )
     ]
 )
